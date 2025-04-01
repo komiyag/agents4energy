@@ -24,17 +24,17 @@ export const defaultAgents: { [key: string]: BaseAgent | BedrockAgent | LangGrap
         source: `graphql`,
         samplePrompts: [
             `今朝、API 番号 30-045-29202 の井戸が、配管に穴が開いているためガスの生産を停止しました。
-            井戸ファイルで見つかったすべての運用イベントのテーブルを作成します。
-            過去のすべての月間生産率を照会し、イベントと生産データの両方を使用してプロットを作成します。
-            井戸の残りの生産量を見積もります。
-            井戸を修復する手順を記述し、修復コストを見積もり、財務指標を計算します。
-            詳細なコストと手順データを含む井戸の修復に関するエグゼクティブ レポートを作成します。
+            井戸ファイルで見つかったすべての運用イベントのテーブルを作成してください。
+            過去のすべての月間生産率を照会し、イベントと生産データの両方を使用してプロットを作成してください。
+            井戸の残りの生産量を見積もってください。
+            井戸を修復する手順を記述し、修復コストを見積もり、財務指標を計算してください。
+            詳細なコストと手順データを含む井戸の修復に関するエグゼクティブ レポートを作成してください。
             すべての手順で ai role を使用します。
             `.replace(/^\s+/gm, ''),
-            `API 番号 30-045-29202 の井戸の井戸ファイルを検索し、操作の種類 (掘削、完了、作業オーバー、プラギング、その他)、運用の詳細を説明するレポートのテキスト、およびドキュメント タイトルを含むテーブルを作成します。
-            また、SQL クエリを実行して、この井戸からの月間総石油、ガス、および水生産量を取得します。
-            イベント データと生産データの両方を使用してプロットを作成します。`.replace(/^\s+/gm, ''), //各行の先頭の空白をトリミングします
-            `API 番号 30-045-29202 の井戸の 1900 年以降の月間石油、ガス、水の総生産量をプロットします`,
+            `API 番号 30-045-29202 の井戸の井戸ファイルを検索し、操作の種類 (掘削、完了、作業オーバー、プラギング、その他)、運用の詳細を説明するレポートのテキスト、およびドキュメント タイトルを含むテーブルを作成してください。
+            また、SQL クエリを実行して、この井戸からの月間総石油、ガス、および水生産量を取得してください。
+            イベント データと生産データの両方を使用してプロットを作成してください。`.replace(/^\s+/gm, ''), //各行の先頭の空白をトリミングします
+            `API 番号 30-045-29202 の井戸の 1900 年以降の月間石油、ガス、水の総生産量をプロットしてください`,
             `私の性格に最も合う人工リフトの形式はどれですか?`
             // `This morning well with API number 30-045-29202 stopped producing gas with indication of a hole in tubing.  
             // Make a table of all operational events found in the well files. 
@@ -57,8 +57,8 @@ export const defaultAgents: { [key: string]: BaseAgent | BedrockAgent | LangGrap
         agentId: outputs.custom.maintenanceAgentId,
         agentAliasId: outputs.custom.maintenanceAgentAliasId,
         samplePrompts: [
-            "バイオディーゼルユニットにはタンクがいくつありますか？",
-            "2024 年 9 月にバイオディーゼルユニットで発生した主なインシデントと対応策は何ですか？"
+            "Biodiesel Unit には tank がいくつありますか？",
+            "2024 年 9 月に Biodiesel Unit で発生した主なインシデントと対応策は何ですか？"
             //"How many tanks are in my biodiesel unit?",
             //"In September 2024, what are a few key incidents and actions taken at the biodiesel unit?",
         ],

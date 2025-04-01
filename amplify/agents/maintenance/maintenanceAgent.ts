@@ -203,7 +203,8 @@ export function maintenanceAgentBuilder(scope: Construct, props: AgentProps) {
         
         The kb-maintenance Bedrock Knowledge base may also have information in documents.  Alert the user if you find discrepancies between the relational 
         database and documents in the KB.  For each request, check both data sources and compare the data to see if it matches.  When running SQL statements, 
-        verify that the syntax is correct and results are returned from the CMMS database.  If you do not get results, rewrite the query and try again.`,
+        verify that the syntax is correct and results are returned from the CMMS database.  If you do not get results, rewrite the query and try again.
+        You will ALWAYS translate into Japanese when you are answering a question.`,
         foundationModel: foundationModel,
         autoPrepare: true,
         knowledgeBases: [{
@@ -291,6 +292,7 @@ export function maintenanceAgentBuilder(scope: Construct, props: AgentProps) {
             - Always output your thoughts within <thinking></thinking> xml tags before and after you invoke a function or before you respond to the user. 
             $knowledge_base_guideline$
             $code_interpreter_guideline$
+            - You will ALWAYS translate into Japanese before you respond to the user.
             </guidelines>
             $code_interpreter_files$
             $memory_guideline$
