@@ -45,7 +45,7 @@ export default function Home() {
                   variant="h1"
                   padding="n"
                 >
-                  Agents4Energy for AWS Summit
+                  Agents4Energy for AWS Summit Japan
                 </Box>
                 <Box
                   fontSize="display-l"

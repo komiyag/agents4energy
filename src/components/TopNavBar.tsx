@@ -29,7 +29,7 @@ const TopNavBar = () => {
       <TopNavigation
         identity={{
           href: "/",
-          title: "Agents4Energy - Sample",
+          title: "Agents4Energy for AWS Summit Japan",
           logo: {
             src: logoSmallTopNavigation.src,
             alt: "A4E"
